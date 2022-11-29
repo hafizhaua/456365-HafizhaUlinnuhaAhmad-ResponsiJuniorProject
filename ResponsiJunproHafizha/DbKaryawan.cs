@@ -48,7 +48,6 @@ namespace ResponsiJunproHafizha
             try
             {
                 conn.Open();
-                //sql = @"select * from karyawan_select()";
                 sql = @"SELECT * FROM karyawan INNER JOIN departemen ON departemen.id_dep = karyawan.id_dep;";
                 cmd = new NpgsqlCommand(sql, conn);
 

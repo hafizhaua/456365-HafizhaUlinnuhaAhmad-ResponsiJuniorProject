@@ -43,6 +43,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cbDepartemen = new System.Windows.Forms.ComboBox();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKaryawan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,11 +192,32 @@
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(39, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(39, 15);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "LOGO";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(207, 37);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(159, 25);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Kelola Karyawan";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 450);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.cbDepartemen);
             this.Controls.Add(this.label8);
@@ -235,5 +258,7 @@
         private Label label8;
         private ComboBox cbDepartemen;
         private Button btnRefresh;
+        private Label label9;
+        private Label label10;
     }
 }
